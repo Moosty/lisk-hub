@@ -23,7 +23,9 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+import '@percy/cypress';
 import networks from '../../constants/networks';
+
 
 before(() => {
   // Check if lisk core is running

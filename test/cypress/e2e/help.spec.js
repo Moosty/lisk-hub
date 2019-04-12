@@ -18,6 +18,7 @@ describe('Help', () => {
     cy.visit(urls.help);
     cy.url().should('contain', urls.help);
     checkHelpPageLoaded();
+    cy.percySnapshot();
   });
 
   /**
